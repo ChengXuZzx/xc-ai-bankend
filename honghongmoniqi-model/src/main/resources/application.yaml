@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: honghongmoniqi-model
+  ai:
+    openai:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: qwen3.5-plus
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
